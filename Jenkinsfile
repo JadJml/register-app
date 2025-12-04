@@ -15,11 +15,7 @@ pipeline{
                     git branch: 'main', credentialsId: 'github', url: 'https://github.com/JadJml/register-app'
                 }
         }
-        stage("Build Application"){
-            steps {
-                sh "mvn clean package"
-            }
-       }
+    
        stage("Test Application"){
            steps {
                  sh "mvn test"
