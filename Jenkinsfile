@@ -26,12 +26,19 @@ pipeline {
              steps {
                  sh "mvn clean package"
              }
-         }
+         }  
 
          stage("Test Application") {
              steps {
                  sh "mvn test"
              }
          }
+
+         stage(" Code Retour "){
+         steps {
+                echo 'PeipLine : OK'
+         }
+         }
+
      }
  }
