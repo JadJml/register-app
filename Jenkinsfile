@@ -18,7 +18,7 @@ pipeline {
              steps {
                  git branch: "main",
                      credentialsId: "github",
-                     url: "https://github.com/jadjml/register-app.git"
+                     url: "https://github.com/JadJml/register-app.git"
              }
          }
 
