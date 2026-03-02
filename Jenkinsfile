@@ -13,7 +13,6 @@ pipeline {
         DOCKER_PASS = credentials("token-msr")   // ID des credentials Docker dans Jenkins
         IMAGE_NAME = "${DOCKER_USER}/${APP_NAME}"
         IMAGE_TAG = "${RELEASE}-${BUILD_NUMBER}"
-        JENKINS_API_TOKEN = credentials("JENKINS_API_TOKEN")
     }
 
     stages {
