@@ -70,7 +70,7 @@ stage ('Cleanup Artifacts') {
 
         stage("Code Retour") {
             steps {
-                echo 'Pipeline : OK'
+                echo 'Pipelines : OK '
             }
         }
     }
